@@ -1,4 +1,5 @@
-var woord= "ooortuin".toUpperCase();
+var nummer= Math.floor(Math.random() * words.length) + 1;
+var woord= words[nummer].toUpperCase();
 var copyword= woord;
 var div= ["container", "input"];
 var wordlength= woord.length;
@@ -8,9 +9,6 @@ const id_row= "Row";
 const class_rows= "Rows";
 const ClassLetters= "Letters";
 var win= false;
-
-//Checken woord + getal
-//Checken op hoeveel beurten
 
 function CreatePlayBoard(){
 	console.log(woord);
@@ -41,8 +39,9 @@ function CreatePlayBoard(){
     inputBtn.setAttribute('type', "button");
     inputBtn.setAttribute('value', "Laat zien");
     inputBtn.setAttribute('id', "button");
+    div[1].appendChild(inputBtn);
     inputBtn.onclick= CheckLetter;
-    header.appendChild(inputBtn);
+
 
 
     for(var loop=1; loop <= aantal_rijen; loop++){
@@ -58,7 +57,7 @@ function CreatePlayBoard(){
             element.appendChild(Wordbox);
         }
     }
-    
+    document.getElementById("letter1Row1").innerHTML= woord.charAt(0);
 
 }
 

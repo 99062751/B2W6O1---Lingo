@@ -1,21 +1,22 @@
 .container{
     border: 3px solid blue;
     width: 600px;
-   text-align: center;
+    text-align: center;
     margin: 100 auto;
     
     background-color: lightyellow;
 }
 
 #h1{
-    text-align: left;
+    text-align: center;
     grid-column: 1/6;
     grid-row: 1/2;
-    border: 5px solid yellow;
     margin: 0;
-    background-color: lightyellow;
+    background-color: rgb(200, 241, 255);
+    border: 5px solid blue;
     height: 60px;
     font-size: 20px;
+    margin-bottom: 20px;
 }
 
 .WordBox{
@@ -34,16 +35,13 @@
 .WoordenInput{
     font-size: 20px;
     text-align: center;
-    margin: 0 auto;
-    width: 300px;
+    width: 600px;
 }
 
 #button{
-    position: absolute;
-    right: 480;
-    top: 115;
-    background-color: lightblue;
+    background-color: lightyellow;
     border: 1px solid blue;
     font-size: 13px;
     text-align: right;
+    margin-left: 40px;
 }
