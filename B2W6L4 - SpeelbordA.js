@@ -70,7 +70,7 @@ function CheckLetter(){
 	if(isNaN(InputUser) && InputUser.length != wordlength){
 		alert("ERROR: INVOER MOET " + woord.length + " LETTERS BEVATTEN!")
 	}
-     if(isNaN(InputUser) && InputUser.length == wordlength && win == false){
+    if(isNaN(InputUser) && InputUser.length == wordlength && win == false){
 		copyword= woord;
         for(var q= 0; q < wordlength; q++){
 			var letter2= woord.charAt(q); 
