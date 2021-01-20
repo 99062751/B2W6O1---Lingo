@@ -11,7 +11,7 @@ const ClassLetters= "Letters";
 var win= false;
 
 function CreatePlayBoard(){
-	console.log(woord);
+    console.log(woord);
     div[0]= document.createElement("div");
     div[0].setAttribute('class', "container");
     document.body.appendChild(div[0]);
