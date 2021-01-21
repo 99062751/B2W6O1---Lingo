@@ -10,6 +10,8 @@ const class_rows= "Rows";
 const ClassLetters= "Letters";
 var win= false;
 
+CreatePlayBoard();
+ShowLetter(0);
 function CreatePlayBoard(){
     console.log(woord);
     div[0]= document.createElement("div");
@@ -57,8 +59,6 @@ function CreatePlayBoard(){
             element.appendChild(Wordbox);
         }
     }
-    document.getElementById("letter1Row1").innerHTML= woord.charAt(0);
-
 }
 
 function CheckLetter(){
@@ -104,5 +104,12 @@ function CheckLetter(){
     }
 }
 
-CreatePlayBoard();
+function ShowLetter(indexletter) {
+    for (var a = 1; a < (aantal_rijen + 1); a++) {
+        console.log(a);
+        document.getElementById("letter" + (indexletter + 1) + "Row" + a).innerHTML= woord.charAt(indexletter);  
+    }
+}
+
+
 

@@ -3,18 +3,16 @@ body{
 }
 
 .container{
+    position: relative;
     border: 3px solid blue;
     width: 600px;
     text-align: center;
     margin: 100 auto;
-    
     background-color: lightyellow;
 }
 
 #h1{
     text-align: center;
-    grid-column: 1/6;
-    grid-row: 1/2;
     margin: 0;
     background-color: rgb(250, 250, 179);
     border: 5px solid blue;
@@ -24,6 +22,7 @@ body{
 }
 
 .WordBox{
+
     display: inline-block;
     background-color: lightblue;
     border: 3px solid blue;
