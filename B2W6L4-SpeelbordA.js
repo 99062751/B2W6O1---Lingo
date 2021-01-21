@@ -56,6 +56,7 @@ function CreatePlayBoard(){
             var Wordbox= document.createElement("div");
             Wordbox.className = "WordBox";
             Wordbox.id = "letter" + a + id_row + loop;
+            Wordbox.innerHTML = "-";
             element.appendChild(Wordbox);
         }
     }
