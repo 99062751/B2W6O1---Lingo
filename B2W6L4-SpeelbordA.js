@@ -3,7 +3,7 @@ var woord= words[nummer].toUpperCase();
 var copyword= woord;
 var div= ["container", "input"];
 var wordlength= woord.length;
-const aantal_rijen= 5;
+const aantal_rijen= 6;
 var RowHeight= 1;
 const id_row= "Row";
 const class_rows= "Rows";
@@ -44,8 +44,6 @@ function CreatePlayBoard(){
     div[1].appendChild(inputBtn);
     inputBtn.onclick= CheckLetter;
 
-
-
     for(var loop=1; loop <= aantal_rijen; loop++){
         element = document.createElement("div");
         element.className = class_rows;
@@ -78,7 +76,7 @@ function CheckLetter(){
 			var letter= InputUser.charAt(q);
 			document.getElementById("letter" + (q + 1) + "Row" + RowHeight).innerHTML= letter;
 
-			if(letter == letter2){
+			if(letter == letter2){ 
 				document.getElementById("letter" + (q + 1) + "Row" + RowHeight).style.backgroundColor= "green";
 				copyword = copyword.replace(letter, "");
 			} 
