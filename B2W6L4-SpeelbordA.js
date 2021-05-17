@@ -62,7 +62,7 @@ function CreatePlayBoard(){
 
 function CheckLetter(){
 	var InputUser= document.getElementById("wordinput").value.toUpperCase();
-    if(!isNaN(InputUser) || !isNaN(InputUser + Number)){
+    if(!isNaN(InputUser)){
 		alert("ERROR: INVOER IS GEEN WOORD!");
 
     }
@@ -71,7 +71,7 @@ function CheckLetter(){
 	}
     if(isNaN(InputUser) && InputUser.length == wordlength && win == false){
 		copyword= woord;
-        for(var q= 0; q < wordlength; q++){
+        for(q= 0; q < wordlength; q++){
 			var letter2= woord.charAt(q); 
 			var letter= InputUser.charAt(q);
 			document.getElementById("letter" + (q + 1) + "Row" + RowHeight).innerHTML= letter;
